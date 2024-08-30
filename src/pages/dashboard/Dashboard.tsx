@@ -11,7 +11,7 @@ export const Dashboard = () => {
             //     mostrarInputBusca
             //     textoBotaoNovo="Nova"
             // />
-            <FerramentasDeDetalhes mostrarBotaoSalvarEFechar/>
+            <FerramentasDeDetalhes mostrarBotaoSalvarEFechar mostrarBotaoApagarCarregando/>
           )}
         >
             Testando
