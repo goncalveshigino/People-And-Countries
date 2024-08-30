@@ -15,7 +15,6 @@ export const LayoutBasePagina: React.FC<ILayoutBasePagina> = ({ children, titulo
     const smDown = useMediaQuery((theme: Theme) => theme.breakpoints.down('sm'));
     const mdDown = useMediaQuery((theme: Theme) => theme.breakpoints.down('md'));
     const theme = useTheme();
-    //const smDown = useMediaQuery(theme.breakpoints.down('sm'));
 
     const { toggleDrawerOpen } = useDrawerContext();
 
@@ -41,9 +40,9 @@ export const LayoutBasePagina: React.FC<ILayoutBasePagina> = ({ children, titulo
             </Box>
 
             {barraDeFerramentas && (
-                    <Box>
-                    {barraDeFerramentas}
-                    </Box>
+                <Box>
+                {barraDeFerramentas}
+                </Box>
             )}
 
 
