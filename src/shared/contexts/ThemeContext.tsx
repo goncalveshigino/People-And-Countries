@@ -10,7 +10,6 @@ import {
 import { LightTheme, DarkTheme } from "../themes";
 
 
-
 interface IThemeContextData {
   themeName: 'light' | 'dark';
   toggleTheme: () => void;

@@ -25,7 +25,7 @@ interface IListItemLink {
    onClick: (() => void) | undefined;
 }
 
-interface IListItemLinkProps {
+interface IMenuLateralProps {
     children: React.ReactNode;
  }
 
@@ -53,7 +53,7 @@ const match = useMatch({ path: resovedPath.pathname, end: false})
     );
 }
 
-export const MenuLateral: React.FC<IMenuComponent> = ({ children }) => {
+export const MenuLateral: React.FC<IMenuLateralProps> = ({ children }) => {
   const theme = useTheme();
   const smDown = useMediaQuery(theme.breakpoints.down("sm"));
 
@@ -94,8 +94,8 @@ export const MenuLateral: React.FC<IMenuComponent> = ({ children }) => {
                     <ListItemLink 
                     key={drawerOption.path}
                     icon = {drawerOption.icon}
-                    to = '/pagina-inicial'
-                    label = "Página inicial"
+                    to = {drawerOption.path}
+                    label = {drawerOption.label}
                     onClick={smDown ? toggleDrawerOpen : undefined}
                     />
                ))}
